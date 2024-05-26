@@ -1,1 +1,1 @@
-# Fake-Image-Detection
+# Fake Image Detection

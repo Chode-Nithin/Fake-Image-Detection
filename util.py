@@ -11,7 +11,7 @@ st.write("Upload the picture here!")
 @st.cache_resource()
 def get_models():
     # Load all models for ensemble
-    model_paths = ['model11.h5', 'model2.h5', 'model3.h5']  # Replace with your actual model paths
+    model_paths = ['model_11.h5', 'model_2.h5', 'model_3.h5']  # Replace with your actual model paths
     models = [tf.keras.models.load_model(model_path) for model_path in model_paths]
     return models
 

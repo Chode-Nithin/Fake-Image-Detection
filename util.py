@@ -1,3 +1,6 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # Suppress TensorFlow logging
+
 import tensorflow as tf
 from PIL import Image, ImageFilter
 import numpy as np
@@ -12,7 +15,11 @@ st.write("Upload the picture here!")
 def get_models():
     # Load all models for ensemble
     model_paths = ['model_11.h5', 'model_2.h5', 'model_3.h5']  # Replace with your actual model paths
-    models = [tf.keras.models.load_model(model_path) for model_path in model_paths]
+    models = []
+    for model_path in model_paths:
+        model = tf.keras.models.load_model(model_path)
+        model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+        models.append(model)
     return models
 
 ensemble_models = get_models()

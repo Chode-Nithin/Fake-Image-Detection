@@ -61,7 +61,7 @@ def classify_image(file_uploaded):
         ensemble_prediction = ensemble_predict_single_image(image)
         
         # Determine the label based on the threshold
-        if ensemble_prediction[0][0] > 0.32:
+        if ensemble_prediction[0][0] > 0.5:
             label = 'fake'
         else:
             label = 'real'

@@ -50,7 +50,8 @@ def ensemble_predict_single_image(image):
         prediction = ensemble_model.predict(image_reshaped)
         predictions.append(prediction)
     # Calculate the mean prediction across all models
-    ensemble_prediction = np.mean(predictions, axis=0)
+    ensemble_prediction = np.max(predictions, axis=0)
+    # ensemble_prediction = np.mean(predictions, axis=0)
     return ensemble_prediction
 
 file_uploaded = st.file_uploader("Choose the Image File", type=["jpg", "png", "jpeg"])

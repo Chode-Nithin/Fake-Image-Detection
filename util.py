@@ -54,7 +54,7 @@ def ensemble_predict_single_image(image):
     # ensemble_prediction = np.mean(predictions, axis=0)
     return ensemble_prediction
 
-file_uploaded = st.file_uploader("Choose the Image File", type=["jpg", "png", "jpeg"])
+file_uploaded = st.file_uploader("Choose the Image File", type=["jpg", "jpeg"])
 
 def classify_image(file_uploaded):
     if file_uploaded is not None:

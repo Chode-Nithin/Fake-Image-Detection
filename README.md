@@ -1,9 +1,11 @@
 ---
 
-# Image Authenticity Detection
+# Fake Image Detection
 
 ## Problem Statement
-Develop a system to detect the authenticity of images, distinguishing between real and fake images using machine learning techniques.
+
+The rise of AI-generated fake images poses significant challenges in various fields, including media integrity and security. These convincing fakes can spread misinformation and create mistrust. To address this issue, we have developed a machine learning-based app to detect the authenticity of images.
+
 
 ## Model and Techniques
 

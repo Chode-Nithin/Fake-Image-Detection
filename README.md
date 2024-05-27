@@ -51,10 +51,10 @@ This project demonstrates the use of MesoNet and ensemble learning to effectivel
 ## Requirements
 The `requirements.txt` file includes all necessary libraries:
 ```
-streamlit==1.13.0
-tensorflow==2.12.0
-Pillow==9.4.0
-numpy==1.23.5
+streamlit
+tensorflow
+Pillow
+numpy
 ```
 
 ---

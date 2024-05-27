@@ -57,4 +57,13 @@ Pillow
 numpy
 ```
 
+## Contributors
+
+- Chode Nithin/ @Chode-Nithin
+- Chokkapu Monisha/ @chokkapumonisha
+## Feedback and Support
+
+For any issues or suggestions, please contact nithinchode@gmail.com. We appreciate your feedback!
+
+
 ---

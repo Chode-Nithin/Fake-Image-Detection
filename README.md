@@ -1,4 +1,6 @@
 ---
+Experince the Fake Image Detection app using the Streamlit link:
+https://fake-image-detection.streamlit.app/
 
 # Fake Image Detection
 
